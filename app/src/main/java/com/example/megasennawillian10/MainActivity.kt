@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Captura as referencias dos Componentes
+
         val btnGenerateNumber: Button = findViewById(R.id.btn_generateNumber)
         val editInputNumber: EditText = findViewById(R.id.editInput_Number)
         val txtResult: TextView = findViewById(R.id.txtresult)
@@ -38,6 +39,8 @@ class MainActivity : AppCompatActivity() {
         btnGenerateNumber.setOnClickListener {
             numberGenerate(editInputNumber.text.toString(), txtResult)
         }
+
+
     }
 
     private fun numberGenerate(text: String, textView: TextView) {
